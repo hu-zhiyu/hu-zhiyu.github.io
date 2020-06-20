@@ -13,75 +13,110 @@ https://github.com/kitian616/jekyll-TeXt-theme
 {% include intro-header.html type='page' short=true %}
 
 <!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<!-- Tags (as filter) -->
-			<div id='tag_cloud' class="tags tags-sup js-tags">
-				<a class="tag-button--all" data-encode="">
-					Show All
-					<sup>{{site.posts.size}}</sup>
-				</a>
+<link href="/css/sites-pics.css" rel="stylesheet">
 
-				{% capture tags %}
-				{% for tag in site.tags %}
-				<a data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}"
-					data-encode="{{ tag[0] | strip | url_encode }}"
-					class="tag-button"
-					title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-					{{ tag[0] }}
-					<sup>{{tag[1].size}}</sup>
-				</a>__SEPERATOR__
-				{% endfor %}
-				{% endcapture %}
-        {{ tags | split:'__SEPERATOR__' | sort }}
-			</div>
-
-            <!-- Article List -->
-			<div class="mini-post-list js-result d-none">
-			{%- assign _sorted_list = site.posts -%}
-			{%- assign _sorted_list = _sorted_list | sort: 'date' -%}
-			{%- assign _sorted_list = _sorted_list | reverse -%}
-
-
-			{%- for _article in _sorted_list -%}
-				{%- assign _tags = '' -%}
-				{%- for _tag in _article.tags -%}
-					{%- assign _tag_encode = _tag | strip | url_encode -%}
-					{%- if forloop.last -%}
-						{%- assign _tags = _tags | append: _tag_encode -%}
-					{%- else -%}
-						{%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
-					{%- endif -%}
-				{%- endfor -%}
-
-			{% comment %} group by year {% endcomment %}
-			{%- assign _currentdate = _article.date | date: '%Y' -%}
-			{%- if _currentdate != _date -%}
-				{%- unless forloop.first -%}</section>{%- endunless -%}
-				<section>
-				<span class="fa listing-seperator">
-					<span class="tag-text">{{ _currentdate }}</span>
-				</span>
-				{%- assign _date = _currentdate -%}
-			{%- endif -%}
-
-				<div class="post-preview item" data-tags="{{ _tags }}">
-				    <a href="{{ _article.url | prepend: site.baseurl }}">
-				        <h2 class="post-title">
-                            {{ _article.title }}
-				        </h2>
-				        {% if _article.subtitle %}
-				        <h3 class="post-subtitle">
-				            {{ _article.subtitle }}
-				        </h3>
-				        {% endif %}
-				    </a>
-					<hr>
-				</div>
-			{%- if forloop.last -%}</section>{%- endif -%}
-			{% endfor %}
-			</div>
-		</div>
-	</div>
+<div class="site_pics">
+	<img src="/uploads/2016_05_29_Sanlitun.jpeg">
+	<p>2016/05/29 三里屯</p>
 </div>
+
+<div class="site_pics">
+	<img src="/uploads/2016_06_10_LIT.jpeg">
+	<p>2016/06/10 北理工良乡校区</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2016_07_02_Laoshan.jpeg">
+	<p>2016/07/02 崂山</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2016_08_27_BIT.jpeg">
+	<p>2016/08/27 北理工</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2017_08_10_Heimifeng.jpeg">
+	<p>2017/08/10 黑糜峰</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2017_10_30_BIT.jpeg">
+	<p>2017/10/30 北理工</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_02_12_Miluoyizhong.jpeg">
+	<p>2018/02/12 汨罗一中</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_04_27_MutianyuGreatWall.jpeg">
+	<p>2018/04/27 慕田峪长城</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_06_30_Qinghaihu.jpeg">
+	<p>2018/06/30 青海湖</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_06_30_Taersi.jpeg">
+	<p>2018/06/30 塔尔寺</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_01_Chakayanhu.jpeg">
+	<p>2018/07/01 茶卡盐湖</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_02_Akesai.jpeg">
+	<p>2018/07/02 阿克塞镇</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_02_NanbaxianYadan.jpeg">
+	<p>2018/07/02 南八仙雅丹</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_03_DunhuangYueyaquan.jpeg">
+	<p>2018/07/03 月牙泉</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_04_Zhangye.jpeg">
+	<p>2018/07/04 张掖</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2018_07_05_ZhuoerMountain.jpeg">
+	<p>2018/07/05 卓尔山</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2019_06_29_BUAA.jpeg">
+	<p>2019/06/29 北航</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2019_10_21_Xiangshan.jpg">
+	<p>2019/10/21 香山</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2019_12_08_BirdsNest.jpg">
+	<p>2019/12/08 鸟巢</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2019_12_31_BlueHarbor.jpg">
+	<p>2019/12/31 蓝色港湾</p>
+</div>
+
+<div class="site_pics">
+	<img src="/uploads/2020_01_06_BUAANMB.jpg">
+	<p>2020/01/06 北航新主楼</p>
+</div>
+
