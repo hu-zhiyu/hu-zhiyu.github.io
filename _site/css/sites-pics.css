@@ -22,13 +22,13 @@
   transform: translate(-50%, -50%); */
 }
 .site_pics > p {
-  font-size: ;
+  font-size: large;
   font-style: normal;
   font-weight: bold;
   color: cadetblue;
   background-color: azure;
   position: absolute;
-  bottom: -2%;
+  bottom: -5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
