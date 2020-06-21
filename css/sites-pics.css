@@ -1,8 +1,10 @@
 .site_pics{
   height: auto;
   width: auto;
+  object-fit: contain;
+
   position: relative;
-  display: flex;
+  /* display: flex; */
   /* left: 22%; */
   top: 10%;
   /* justify-content: center; */
@@ -25,7 +27,7 @@
   font-weight: bold;
   color: cadetblue;
   position: absolute;
-  bottom: 0;
+  bottom: -2%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
