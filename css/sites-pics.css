@@ -29,3 +29,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.text_style{
+  font-size: large;
+  font-style: normal;
+  font-weight: bold;
+  color: cadetblue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
