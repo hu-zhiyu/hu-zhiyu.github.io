@@ -1,9 +1,9 @@
 .site_pics{
-  height: 700px;
-  width: 800px;
+  height: auto;
+  width: auto;
   position: relative;
   display: flex;
-  left: 22%;
+  /* left: 22%; */
   top: 10%;
   /* justify-content: center; */
 }
