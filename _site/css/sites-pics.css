@@ -25,7 +25,7 @@
   font-weight: bold;
   color: cadetblue;
   position: absolute;
-  bottom: -2%;
+  bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
 }
