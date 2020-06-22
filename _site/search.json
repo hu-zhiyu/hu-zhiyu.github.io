@@ -1,21 +1,12 @@
 [
   
     {
-      "title"    : "My Programming Languages Spectrum",
-      "title-lower"    : "my programming languages spectrum",
+      "title"    : "C++动态内存与智能指针",
+      "title-lower"    : "c++动态内存与智能指针",
       "categories" : "",
-      "tags"     : "",
-      "url"      : "/2020/05/05/pl-chart/",
-      "date"     : "2020-05-05 00:00:00 +0800"
-    } ,
-  
-    {
-      "title"    : "My Spacemacs Workflow",
-      "title-lower"    : "my spacemacs workflow",
-      "categories" : "",
-      "tags"     : "Vim, Emacs",
-      "url"      : "/2019/09/08/spacemacs-workflow/",
-      "date"     : "2019-09-08 00:00:00 +0800"
+      "tags"     : "C++, 动态内存, 智能指针",
+      "url"      : "/2020/06/22/C++%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E4%B8%8E%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/",
+      "date"     : "2020-06-22 00:00:00 +0800"
     } 
   
 ]

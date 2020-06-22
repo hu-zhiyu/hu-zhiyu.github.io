@@ -1,13 +1,14 @@
 .site_pics{
+  max-width: 900px;
   height: auto;
   width: auto;
   object-fit: contain;
-
   position: relative;
   /* display: flex; */
   /* left: 22%; */
   top: 10%;
-  /* justify-content: center; */
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .site_pics > img {
   max-height: 100%;
