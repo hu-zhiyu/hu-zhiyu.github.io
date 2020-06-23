@@ -5,13 +5,16 @@
     <description>Software Engineer, Backend Developer, Focusing on Distributed System and Database System</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Jun 2020 22:48:36 +0800</pubDate>
-    <lastBuildDate>Mon, 22 Jun 2020 22:48:36 +0800</lastBuildDate>
+    <pubDate>Tue, 23 Jun 2020 11:02:13 +0800</pubDate>
+    <lastBuildDate>Tue, 23 Jun 2020 11:02:13 +0800</lastBuildDate>
     <generator>Jekyll v4.1.0</generator>
     
       <item>
         <title>C++动态内存与智能指针</title>
-        <description>&lt;h3 id=&quot;内存布局&quot;&gt;内存布局&lt;/h3&gt;
+        <description>&lt;h3 id=&quot;内存布局与智能指针的引入&quot;&gt;内存布局与智能指针的引入&lt;/h3&gt;
+&lt;p&gt;概括来说，Linux进程在内存空间中主要可分为堆、栈和静态存储区等。静态存储区用来保存局部static对象、类static数据成员以及定义在任何函数之外的变量。栈内存用来保存定义在函数内的非static对象。分配在静态存储区和栈内存中的对象由编译器自动创建和销毁。堆内存用来存储程序运行时动态分配的对象，动态对象的生存期由程序来控制，因此很容易出现问题：如果忘记释放动态分配的内存，就会产生内存泄漏；如果在尚有指针引用的情况下释放了内存，就会产生空悬指针。&lt;/p&gt;
+
+&lt;p&gt;为了更容易也更安全地使用动态内存，C++11标准库提供了两种智能指针类型来管理动态对象，负责自动释放所使用的对象。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shared_ptr&lt;/code&gt;允许多个指针指向同一个对象，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unique_ptr&lt;/code&gt;则独占所指向的对象。此外，标准库还定义了一个名为&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;weak_ptr&lt;/code&gt;的伴随类，它是一种&lt;a href=&quot;https://en.wikipedia.org/wiki/Weak_reference&quot;&gt;弱引用&lt;/a&gt;，指向&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shared_ptr&lt;/code&gt;所管理的对象，用于解决循环引用问题。这三种类型都定义在&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;memory&lt;/code&gt;头文件中。&lt;/p&gt;
 &lt;h3 id=&quot;shared_ptr类&quot;&gt;shared_ptr类&lt;/h3&gt;
 &lt;h3 id=&quot;直接管理内存&quot;&gt;直接管理内存&lt;/h3&gt;
 &lt;h3 id=&quot;shared_ptr和new结合使用&quot;&gt;shared_ptr和new结合使用&lt;/h3&gt;
