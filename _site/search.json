@@ -1,6 +1,15 @@
 [
   
     {
+      "title"    : "常用Git操作总结",
+      "title-lower"    : "常用git操作总结",
+      "categories" : "",
+      "tags"     : "Git",
+      "url"      : "/2020/06/22/%E5%B8%B8%E7%94%A8Git%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/",
+      "date"     : "2020-06-22 00:00:00 +0800"
+    } ,
+  
+    {
       "title"    : "C++动态内存与智能指针",
       "title-lower"    : "c++动态内存与智能指针",
       "categories" : "",
