@@ -5,8 +5,8 @@ header-img: img/home-bg.jpg
 email: huzhiyu2828@gmail.com
 description: "Software Engineer, Backend Developer, Focusing on Distributed System and Database System"
 keyword: "Backend, Database, Distributed System"
-url: "www.imhzy.top"                    # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+url: ""                    # your host, for absolute URL
+baseurl: ""                # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
 future: true
