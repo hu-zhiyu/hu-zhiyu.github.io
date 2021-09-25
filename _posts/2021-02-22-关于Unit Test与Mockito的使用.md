@@ -11,4 +11,5 @@ tags:
 
 Reference:
 1. https://www.toptal.com/java/a-guide-to-everyday-mockito
+2. How to mock void method call using Mockito/EasyMock: https://stackoverflow.com/questions/859031/easymock-void-methods, 
 
